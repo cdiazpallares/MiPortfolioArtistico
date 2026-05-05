@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+
+    <!-- CAMBIO: datos personales -->
+    <meta name="description" content="Portfolio artístico de Claudia Díaz-Pallarés">
+    <meta name="author" content="Claudia Díaz-Pallarés">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CAMBIO: título personalizado -->
+    <title>Claudia Díaz-Pallarés | Mis artes</title>
+
+    <!-- CAMBIO: tipografías personales -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CAMBIO: mantengo mi CSS personal -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body id="page-top">
+
+    <header class="hero" id="inicio">
+        <div class="capa-color">
+
+            <nav class="menu" id="mainNav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="TXTM.html">TXTM</a></li>
+                </ul>
+            </nav>
+
+            <!-- MASTHEAD: portada principal adaptada a mi portfolio -->
+            <div class="hero-texto">
+                <p class="subtitulo-portada">Portfolio artístico</p>
+                <h1>Claudia Díaz-Pallarés</h1>
+                <p class="frase-portada">Mis artes</p>
+                <p><a class="boton" href="#galeria">Ver obra</a></p>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="seccion sobre-mi" id="sobre-mi">
+        <div class="contenedor">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy Claudia Díaz-Pallarés, estudiante de 2º de Bellas Artes y Diseño
+                en la Universidad Francisco de Vitoria.
+            </p>
+            <p>
+                Mi trabajo nace del interés por la cultura, la belleza y la dimensión
+                espiritual. Me inspira la belleza de las cosas pequeñas y esas emociones
+                que remiten a Dios y a una experiencia más profunda de la realidad.
+            </p>
+        </div>
+    </section>
+
+    <section class="seccion galeria" id="galeria">
+        <div class="contenedor">
+            <h2>Galería</h2>
+
+            <!-- CAMBIO: primer bloque de obras -->
+            <div class="bloque-galeria">
+                <h3>Traje de luz</h3>
+                <p class="texto-bloque">
+                    Serie de pintura centrada en la presencia, el detalle y la fuerza simbólica de la figura.
+                </p>
+
+                <div class="rejilla pintura-rejilla">
+                    <div class="obra">
+                        <img src="assets/img/cuadro1.jpg" alt="Pintura de torero de espaldas con traje gris y dorado">
+                    </div>
+
+                    <div class="obra">
+                        <img src="assets/img/cuadro2.jpg" alt="Pintura de torero con traje morado sosteniendo el capote">
+                    </div>
+
+                    <div class="obra">
+                        <img src="assets/img/cuadro3.jpg" alt="Pintura de torero de espaldas con capote amarillo y rosa">
+                    </div>
+
+                    <div class="obra">
+                        <img src="assets/img/cuadro4.jpg" alt="Pintura de torero con traje rojo">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAMBIO: segundo bloque de obras -->
+            <div class="bloque-galeria">
+                <h3>Gesto y movimiento</h3>
+                <p class="texto-bloque">
+                    Acuarelas que exploran el ritmo del cuerpo, el vuelo del capote y la tensión del gesto.
+                </p>
+
+                <div class="rejilla acuarela-rejilla">
+                    <div class="obra">
+                        <img src="assets/img/acuarela1.jpg" alt="Acuarela de torero con capote rosa">
+                    </div>
+
+                    <div class="obra">
+                        <img src="assets/img/acuarela2.jpg" alt="Acuarela de torero con toro y capote">
+                    </div>
+
+                    <div class="obra">
+                        <img src="assets/img/acuarela3.jpg" alt="Acuarela de torero con capote rojo">
+                    </div>
+
+                    <div class="obra">
+                        <img src="assets/img/acuarela4.jpg" alt="Acuarela de torero junto al toro">
+                    </div>
+
+                    <div class="obra">
+                        <img src="assets/img/acuarela5.jpg" alt="Acuarela de torero en movimiento con capote amarillo y rosa">
+                    </div>
+
+                    <div class="obra">
+                        <img src="assets/img/acuarela6.jpg" alt="Acuarela de torero con capote extendido">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAMBIO: tercer bloque con modal -->
+            <div class="bloque-galeria">
+                <h3>Materia y símbolo</h3>
+                <p class="texto-bloque">
+                    Obras donde la materia y la imagen se convierten en lenguaje emocional y espiritual.
+                </p>
+
+                <div class="rejilla otras-rejilla">
+
+                    <div class="obra obra-click" onclick="abrirModal('assets/img/escultura.jpg','EL PERDÓN','Esta idea sobre el perdón me surgió durante una actividad en un retiro. Mientras estaba rezando, me pregunté cómo sería, para mí, un perdón verdaderamente completo, y de ahí nació esta idea la cual quise llevar con esta tarea a algo más grande.\n\nEse abrazo representa el perdón puro de Dios, ese perdón que nos da tras cada confesión. Ese amor incondicional que se muestra con un abrazo y un perdón puro y verdadero.\n\nFicha técnica\nClaudia Díaz-Pallarés\n“El perdón” 2025\nTalla en escayola\n15 x 15 x 15 cm')">
+                        <img src="assets/img/escultura.jpg" alt="Escultura El perdón">
+                    </div>
+
+                    <div class="obra obra-click" onclick="abrirModal('assets/img/flores.jpg','El primer pétalo de felicidad','Cuadro realizado con temple de huevo.\n\nEste cuadro puede parecer unas simples flores, pero en su profundidad lleva a ese sentimiento de esa primera vez, cuando te regalan ese primer ramo pensando en ti, en tus gustos, en ese detalle que te genera una felicidad difícil de explicar.\n\nEstas flores fueron eso para mí, ese primer ramo que me regaló mi padre en un día que lo único que puedo recordar era ese cielo azul y soleado junto a ese ramo de tulipanes rosas.')">
+                        <img src="assets/img/flores.jpg" alt="Cuadro de tulipanes rosas">
+                    </div>
+
+                    <div class="obra obra-click" onclick="abrirModal('assets/img/grabado.jpg','Grabando historia','Obra realizada con la técnica de puntaseca en grabado.\n\nEsta pieza representa no solo la figura de Cristo, sino también la carga histórica y espiritual que contiene. A través del contraste y de la línea se construye una imagen que remite al sacrificio, la redención y la permanencia de su historia en el tiempo.')">
+                        <img src="assets/img/grabado.jpg" alt="Grabado de Cristo">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="seccion contacto" id="contacto">
+        <div class="contenedor">
+            <h2>Contacto</h2>
+            <p>
+                Si quieres conocer más sobre mi trabajo o seguir mi proceso creativo,
+                puedes encontrarme aquí:
+            </p>
+
+            <ul class="lista-contacto">
+                <li><a href="mailto:claudia.diazpallares@icloud.com">claudia.diazpallares@icloud.com</a></li>
+                <li><a href="https://www.instagram.com/cdiazp.art" target="_blank" rel="noopener noreferrer">Instagram: @cdiazp.art</a></li>
+                <li><a href="https://www.tiktok.com/@cdiaz.art" target="_blank" rel="noopener noreferrer">TikTok: @cdiaz.art</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="pie">
+        <p>&copy; 2025 Claudia Díaz-Pallarés · Portfolio artístico</p>
+    </footer>
+
+    <!-- MODAL: ventana para ampliar las tres obras finales -->
+    <div id="modal-obras">
+        <div id="caja-modal">
+            <p id="cerrar-modal"><a href="javascript:void(0)" onclick="cerrarModal()">X</a></p>
+
+            <div class="imagen-modal">
+                <img id="imagen-grande" src="" alt="">
+            </div>
+
+            <div class="texto-modal">
+                <h3 id="titulo-modal"></h3>
+                <p id="descripcion-modal"></p>
+            </div>
+
+            <div class="limpiar"></div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
